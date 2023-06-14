@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/640f37c49e60b218a7396816
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Zainatul Sirti",
+    "email": "zainatul@gmail.com",
+    "gender": "Female"
+}
+
+###
+PATCH http://localhost:5000/users/640f37c49e60b218a7396816
+Content-Type: application/json
+
+{
+    "name": "John",
+    "email": "John@gmail.com",
+    "gender": "Male"
+}
+
+###
+DELETE http://localhost:5000/users/640f37c49e60b218a7396816
